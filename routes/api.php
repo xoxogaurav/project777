@@ -41,6 +41,7 @@ Route::middleware(['auth:api', 'api'])->group(function () {
         Route::put('/tasks/{task}/review', [TaskController::class, 'review']);
     });
 
+     
     // Transaction routes
     Route::get('/transactions', [TransactionController::class, 'index']);
     Route::post('/transactions/withdraw', [TransactionController::class, 'withdraw']);
